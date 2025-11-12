@@ -15,29 +15,29 @@ class Animal {
 	bool isHungry;
 public :
 	Animal() {
-	};
+	}
 	Animal(string n, int a, bool h) {
 		name = n;
 		age = a;
 		isHungry = h;
-	};
+	}
 	string getName() {
 		return name;
-	};
+	}
 	int getAge() {
 		return age;
-	};
+	}
 	bool getIsHungry() {
 		return isHungry;
-	};
+	}
 
 	void display() {
 		cout << name << "(" << "Age: " << age << isHungry << ")" << endl;
-	};
+	}
 	void feed() {
 		isHungry = false;
 
-	};
+	}
 };
 
 class Mammal : public Animal {
