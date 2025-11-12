@@ -35,7 +35,12 @@ public :
 		cout << name << "(" << "Age: " << age << isHungry << ")" << endl;
 	}
 	void feed() {
-		isHungry = false;
+		if(isHungry){
+			cout<<"is being feeded"<<endl;
+			ishungry=false;
+		}
+		else
+			cout<<"is not Hungry !"<<endl;
 
 	}
 };
@@ -86,9 +91,11 @@ private:
 public:
 	Enclosure() {
 	}
-	Enclosure(int cap) {
-		capacity = cap;
-	}
+ Enclosure(int cap) {
+        capacity = cap;
+        currentCount = 0;
+        animals = new Animal*[capacity];
+    }	
 	void addAnimal(Animal* a) {
 		if (currentCount < capacity) {
 			animals[currentCount] = *a;
@@ -100,7 +107,7 @@ public:
 	};
 	void displayAnimals() {
 		for (int i = 0; i < currentCount; i++) {
-			animals[i].display();
+			animals[i]->display();
 		};
 
 	};
