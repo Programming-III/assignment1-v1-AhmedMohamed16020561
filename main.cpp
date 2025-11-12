@@ -21,15 +21,7 @@ public :
 		age = a;
 		isHungry = h;
 	}
-	string getName() {
-		return name;
-	}
-	int getAge() {
-		return age;
-	}
-	bool getIsHungry() {
-		return isHungry;
-	}
+	
 
 	void display() {
 		cout << name << "(" << "Age: " << age << isHungry << ")" << endl;
