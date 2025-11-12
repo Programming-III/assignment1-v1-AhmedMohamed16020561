@@ -13,9 +13,6 @@ private:
 public:
 	Animal();
 	Animal(string n, int a, bool h);
-	string getName();	
-	int getAge();
-	bool getIsHungry();
 	void display();
 	void feed();
 	~Animal();
