@@ -3,8 +3,13 @@
 
 #include "Animal.h"
 
-//define reptile class here
-
+class Repite : public Animal {
+	public:
+		bool isVenomous;
+		Repite();
+		Repite(string n, int a, bool h, bool v);
+		~Repite();
+};
 
 
 
